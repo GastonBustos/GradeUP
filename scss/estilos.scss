@@ -1,0 +1,1222 @@
+@import "var";
+
+
+/*INDICE*/
+
+/*INDEX*/
+
+/*PCARMADA*/
+
+/*INSUMOS*/
+
+/*OFERTAS*/
+
+/*REGISTRO*/
+
+/*NOTEBOOKS*/
+
+
+
+
+
+* {
+  margin: 0%;
+  padding: 0%;
+}
+body {
+    color: white;
+    background-color: rgb(23, 23, 23);
+    font-family: 'Montserrat', sans-serif;
+    
+
+    a {
+        color: white;
+        text-decoration: none;
+      }
+
+    li, ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    }
+
+    .SectionBanner img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+    }
+
+    .ImgFactor {
+    width: auto;
+    height: 204;
+    padding: 0px 0.5rem;
+    }
+}
+
+
+/*Media Nav-Footer PHONE*/
+  @media only screen and (max-width: 599px) {
+  
+  /*Nav*/
+
+    #Nav {
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    height: auto;
+  }
+  .Mobile, .TitleDiv, .TitleSection, .Carousel-Mobile {
+    display: none;
+  }
+    
+  /*Footer*/
+
+  .LogoContainer {
+    display: none;
+  }
+  #Footer {
+    display: block;
+    height: 200px;
+  }
+  .a {
+    display: none;
+  }
+  .IconsStyle {
+    margin: 10px;
+  }
+ }
+ /*TABLET*/
+ @media only screen and (min-width: 600px) and (max-width: 1024px) {
+  /*Footer*/
+  .LogoContainer {
+    display: none;
+  }
+ }
+
+ /*Footer Style*/
+  #Footer {
+  display: block;
+  height: 200px;
+  }
+  .IconsStyle {
+  margin: 10px;
+  }
+
+
+
+
+
+  /*_________________BLOQUES_________________*/
+  
+  
+  
+  
+  
+  /*.SectionItem-D {
+    align-items: center;
+    background-color: #444444;
+    overflow: hidden;
+    display: flex;
+  }
+  .SectionItem-O {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    
+  }
+  .ItemBox {
+    width: 230px;
+    height: 280px;
+    background-color: #EDEDED;
+    display: block;
+    border-radius: 10px;
+    margin: 5px;
+  }
+  .ItemImgBox {
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(0deg, rgba(88, 88, 88, 0.466), transparent);
+    img {
+      height: 150px;
+      width: auto;
+      padding-top: 20px;
+    }
+  }
+  .ItemSpanBox {
+    width: 100%;
+    height: 30%;
+    color: black;
+    margin-top: 25px;
+    overflow: hidden;
+  }
+  .Title {
+    text-align: center;
+    width: 100%;
+    display: block;
+  }
+  .Price {
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    display: block;
+    padding-bottom: 5px;
+    background-color: $pal-white;
+    font-size: x-large;
+  }*/
+  
+  /*Bloque Item Venta
+  .SectionItem-O {
+    @extend %SectionItemO0;
+    .ItemBox {
+      a {
+      @extend %ItemBox1;
+        .ItemImgBox {
+          @extend %ItemImgBox2;
+        }
+        .ItemSpanBox {
+          @extend %ItemSpanBox3;
+          .Price {
+            @extend %Price;
+          }
+          .Title {
+            @extend %ItemTitle;
+          }
+        } 
+      }
+    }
+  }*/
+  
+
+
+
+
+  /*HEADER*/
+  
+  #Nav {
+    background-color: rgb(68, 68, 68);
+  }
+  
+  .Logo {
+    width: 209;
+    height: auto;
+    margin: 15px;
+  }
+  
+
+
+
+  
+  /*--------------------------INDEX--------------------------*/
+
+
+
+
+  
+  /*Seccion Uno*/
+  .TitleSectionOne {
+    margin:30px auto 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1290px;
+    h3 {
+      font-weight: bold;
+      font-style: italic;
+    }
+  }
+  .PCDescriptionOne {
+    text-decoration: underline;
+    color: #DA0037;
+    transition: 0.4s;
+    display:block;
+  
+    &:hover {
+      color: #EDEDED;
+    }
+  }
+  .SectionPcArmadaOne {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    
+    .SectionItem {
+      align-items: center;
+      background-color: #444444;
+      overflow: hidden;
+      display: flex;
+
+      .PcArmadaItemBox {
+        width: 230px;
+        height: 280px;
+        background-color: #EDEDED;
+        display: block;
+        border-radius: 10px;
+        margin: 15px;
+
+        .PcArmadaImgBox {
+          img {
+            height: 150px;
+            width: auto;
+            padding-top: 20px;
+          }
+        
+          display: flex;
+          justify-content: center;
+          background-image: linear-gradient(0deg, rgba(88, 88, 88, 0.466), transparent);
+        }   
+        .PcArmadaSpanBox {
+          width: 100%;
+          height: 30%;
+          color: black;
+          margin-top: 25px;
+          overflow: hidden;
+
+          .PcArmadaItemTitle {
+            text-align: center;
+            width: 100%;
+            display: block;
+          }
+
+          .PcArmadaPrice {
+            font-weight: bold;
+            text-align: center;
+            width: 100%;
+            display: block;
+            padding-bottom: 5px;
+            background-color: $pal-white;
+            font-size: x-large;
+          }
+        }
+      }
+    } 
+  }
+  .PcArmadaImg {
+    height: 400px;
+    width: auto;
+  }
+
+  /*Seccion Dos*/
+  
+  .TitleSectionTwo {
+    margin:30px auto 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1290px;
+    h3 {
+      font-weight: bold;
+      font-style: italic;
+    }
+  }
+  .PDescriptionTwo {
+    text-decoration: underline;
+    color: $pal-red;
+    transition: 0.4s;
+  
+    &:hover {
+      color: $pal-white;
+    }
+  }
+  .SectionNotebookTwo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    .SectionItem {
+      align-items: center;
+      background-color: $pal-gray;
+      overflow: hidden;
+      display: flex;
+
+      .NotebookItemBox {
+        width: 230px;
+        height: 280px;
+        background-color: $pal-white;
+        display: block;
+        border-radius: 10px;
+        margin: 15px;
+
+        .NotebookImgBox {
+          img {
+            height: 150px;
+            width: auto;
+            padding-top: 20px;
+          }
+        
+          display: flex;
+          justify-content: center;
+          background-image: linear-gradient(0deg, rgba(88, 88, 88, 0.466), transparent);
+        }
+
+        .NotebookSpanBox {
+          width: 100%;
+          height: 30%;
+          color: black;
+          margin-top: 25px;
+          overflow: hidden;
+
+          .NotebookItemTitle {
+            text-align: center;
+            width: 100%;
+            display: block;
+          }
+
+          .NotebookPrice {
+            font-weight: bold;
+            text-align: center;
+            width: 100%;
+            display: block;
+            padding-bottom: 5px;
+            background-color: $pal-white;
+            font-size: x-large;
+          }
+        } 
+      }
+    }
+  }
+  .NotebookImg {
+    height: 400px;
+    width: auto;
+  }
+
+  /*Seccion Tres*/
+
+  .Envios {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: $pal-gray;
+    margin-bottom:50px;
+    border-top: $pal-red solid 2px;
+    border-bottom: $pal-red solid 2px;
+
+    .Envios__Tarjeta {
+      max-width: 250px;
+      margin: 40px;
+      text-align: center;
+      border:$pal-white solid;
+
+      .Envios__Tarjeta__Icon {
+        margin: 10px;
+      }
+
+      .Envios__Tarjeta__Span {
+        font-size: x-large;
+
+        .Envios__Tarjeta__Span__Title {
+          color: $pal-red;
+          font-weight: bold;
+        }
+
+        .Envios__Tarjeta__Span__Description {
+          font-style: italic;
+        }
+      }
+    }
+
+    .Envios__Camion {
+      max-width: 250px;
+      margin: 40px;
+      text-align: center;
+      border:$pal-white solid;
+
+      .Envios__Camion__Icon {
+        margin-bottom:10px;
+      }
+      .Envios__Camion__Span {
+        font-size: x-large;
+
+        .Envios__Camion__Span__Title {
+          color: $pal-red;
+          font-weight: bold;
+        }
+
+        .Envios__Camion__Span__Description {
+          font-style: italic;
+        }
+      }
+    }
+    .Envios__FastCamion {
+      max-width: 250px;
+      margin: 40px;
+      text-align: center;
+      border:$pal-white solid;
+
+      .Envios__FastCamion__Icon {
+        margin-bottom:10px;
+      }
+
+      .Envios__FastCamion__Span {
+        font-size: x-large;
+
+        .Envios__FastCamion__Span__Title {
+          color: $pal-red;
+          font-weight: bold;
+        }
+        
+        .Envios__FastCamion__Span__Description {
+          font-style: italic;
+
+          .Envios__FastCamion__Span__Description--Terms {
+            text-decoration: underline;
+            color: $pal-white;
+            transition: 0.4s;
+          }
+          .Envios__FastCamion__Span__Description--Terms:hover {
+            color: $pal-red;
+          } 
+        }
+      }
+    }  
+    .Envios__CashBack {
+      max-width: 250px;
+      margin: 40px;
+      text-align: center;
+      border:$pal-white solid;
+
+      .Envios__CashBack__Icon {
+        margin:10px;
+      }
+
+      .Envios__CashBack__Span {
+        font-size: x-large;
+
+        .Envios__CashBack__Span__Title {
+          color: $pal-red;
+          font-weight: bold;
+        }
+
+        .Envios__CashBack__Span__Description {
+          font-style: italic;
+        }
+      }
+    }
+  }
+
+  .BannerMiddleImg img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+  }
+    
+  
+
+
+  /*Mobile First - Celular*/
+      @media only screen and (max-width: 599px) {
+            
+        /*----------INDEX----------*/
+
+        .TitleSectionOne {
+          text-align: center;
+        }
+        .SectionPcArmadaOne {
+          width: auto;
+
+          .ImgSectionOneMobile {
+            display: none;
+          }
+
+          .SectionItem {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: transparent;
+            width: 100%;
+
+            .ItemBoxes {
+              width: calc(100%/2); 
+              margin: 0px;
+
+              .PcArmadaItemBox {
+                width: auto;
+                margin:3px 3px;
+              }
+            }
+          }
+        }
+      
+        .TitleSectionTwo {
+          text-align: center;
+        }
+        .SectionNotebookTwo {
+          width: auto;
+
+          .ImgSectionTwoMobile {
+            display: none;
+          }
+
+          .SectionItem {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: transparent;
+            width: 100%;
+
+            .ItemBoxes {
+              width: calc(100%/2); 
+              margin: 0px;
+
+              .NotebookItemBox {
+                width: auto;
+                margin:3px 3px;
+              }
+            } 
+          } 
+        }
+
+        .Envios {
+          flex-direction: column;
+          align-items: center;
+          width: auto;
+
+          .Envios__Tarjeta {
+            margin: 15px;
+            .Envios__Tarjeta__Icon {
+              width: 60px;
+              height: auto;
+            }
+            .Envios__Tarjeta__Span {
+              font-size: medium;
+            }
+          }
+          .Envios__Camion {
+            margin: 15px;
+            .Envios__Camion__Icon {
+              width: 60px;
+              height: auto;
+            }
+            .Envios__Camion__Span {
+              font-size: medium;
+            }
+          }
+          .Envios__FastCamion {
+            margin: 15px;
+            .Envios__FastCamion__Icon {
+              width: 60px;
+              height: auto;
+            }
+            .Envios__FastCamion__Span {
+              font-size: medium;
+            }
+          }
+          .Envios__CashBack {
+            margin: 15px;
+            .Envios__CashBack__Icon {
+              width: 60px;
+              height: auto;
+            }
+            .Envios__CashBack__Span {
+              font-size: medium;
+            }
+          }
+        }
+        /*Body*/
+        
+        
+      
+      
+        
+      }
+      /*Tablet*/
+      @media only screen and (min-width: 600px) and (max-width: 1024px) {
+
+        /*----------INDEX----------*/
+
+        .TitleSectionOne {
+          text-align: center;
+        }
+        .SectionPcArmadaOne {
+          width: auto;
+
+          .ImgSectionOneMobile {
+            display: none;
+          }
+
+          .SectionItem {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: transparent;
+            width: 100%;
+
+            .ItemBoxes {
+              width: calc(100%/3); 
+              margin: 0px;
+
+              .PcArmadaItemBox {
+                width: auto;
+                margin:3px 3px;
+              }
+            }
+          }
+        }
+      
+        .TitleSectionTwo {
+          text-align: center;
+        }
+        .SectionNotebookTwo {
+          width: auto;
+
+          .ImgSectionTwoMobile {
+            display: none;
+          }
+
+          .SectionItem {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: transparent;
+            width: 100%;
+
+            .ItemBoxes {
+              width: calc(100%/3); 
+              margin: 0px;
+
+              .NotebookItemBox {
+                width: auto;
+                margin:3px 3px;
+              }
+            } 
+          } 
+        }
+
+        .Envios {
+          flex-direction: column;
+          align-items: center;
+          width: auto;
+
+          .Envios__Tarjeta {
+            margin: 15px;
+            .Envios__Tarjeta__Icon {
+              width: 60px;
+              height: auto;
+            }
+            .Envios__Tarjeta__Span {
+              font-size: medium;
+            }
+          }
+          .Envios__Camion {
+            margin: 15px;
+            .Envios__Camion__Icon {
+              width: 60px;
+              height: auto;
+            }
+            .Envios__Camion__Span {
+              font-size: medium;
+            }
+          }
+          .Envios__FastCamion {
+            margin: 15px;
+            .Envios__FastCamion__Icon {
+              width: 60px;
+              height: auto;
+            }
+            .Envios__FastCamion__Span {
+              font-size: medium;
+            }
+          }
+          .Envios__CashBack {
+            margin: 15px;
+            .Envios__CashBack__Icon {
+              width: 60px;
+              height: auto;
+            }
+            .Envios__CashBack__Span {
+              font-size: medium;
+            }
+          }
+        }
+      }
+      /*PC*/
+      @media only screen and (min-width: 1024px) {
+        /*Header*/
+      
+        .navbar-expand-lg {
+          .navbar-collapse {
+            justify-content: end;
+          }
+      
+          .navbar-nav .nav-link {
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+          }
+        }
+      
+        /*Body*/
+      
+        /*Footer*/
+      
+        #Footer {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+        }
+      
+        .IconsStyle {
+          margin: 10px;
+        }
+      }
+
+
+
+
+
+  /*--------------------------PC ARMADA--------------------------*/
+  
+
+
+
+
+  .PcArmadaTitlePage {
+    font-weight: bold;
+    font-size: x-large;
+  }
+  
+  .DropdownNTitle {
+    display: flex;
+    justify-content: space-between;
+    .btn-secondary {
+      background-color:$pal-gray;
+    }
+  }
+  
+  
+  
+
+
+
+
+  /*--------------------------REGISTRO--------------------------*/
+  
+
+
+
+
+  .GoogleLogo, .FacebookLogo {
+    width: 35px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  
+  .GridPadre {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    row-gap: 15px;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  
+  .h4 {
+    grid-area: auto;
+    width: 250px;
+  }
+  
+  .Nombre, .Mail {
+    grid-area: auto;
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  .Checkbox {
+    grid-area: auto;
+    width: 250px;
+  }
+  
+  .AcGoogle {
+    grid-area: auto;
+    background-color: $googleplus;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 50px;
+    border-radius: 5px;
+  }
+  
+  .AcFacebook {
+    grid-area: auto;
+    background-color: $facebook;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 50px;
+    border-radius: 5px;
+  }
+  
+  .FormRegistrar {
+    width: 250px;
+    height: 50px;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-size: 20px;
+  }
+  
+
+
+
+
+  /*--------------------------INSUMOS--------------------------*/
+  
+  
+
+  
+
+  .TitleSection {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  
+  .TitleDiv {
+    display: flex;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .ItemTitle {
+    height: 300px;
+    width: auto;
+    margin: 13.5px;
+    background-color: #1e1e1e;
+    border-radius: 20px;
+    transition: height .8s, width .8s;
+  }
+  
+  .ItemImg {
+    display: flex;
+    justify-content: center;
+  
+    img {
+      height: 200px;
+      width: auto;
+      margin-top: 15px;
+      background-image: linear-gradient(0deg, black, transparent);
+      transition: height .8s, width .8s;
+  
+      &:hover {
+        height: 250px;
+        width: auto;
+      }
+    }
+  }
+  
+  .ItemTitle:hover {
+    height: 350px;
+    width: auto;
+  }
+  
+  .ItemSpan {
+    text-align: center;
+    margin-top: 20px;
+    font-size: x-large;
+    font-weight: bold;
+  }
+  
+  .Line {
+    width: 100%;
+    height: 5px;
+    background: #DA0037;
+  }
+  
+  .SectionTitleAnim {
+    color: red;
+    animation-name: Rgb;
+    animation-iteration-count: infinite;
+    animation-duration: 1000ms;
+  }
+  
+  @keyframes Rgb {
+    0% {
+      color: green;
+    }
+  
+    50% {
+      color: blue;
+    }
+  
+    100% {
+      color: red;
+    }
+  }
+  
+  .RGBSection {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .RGBH3 {
+    text-align: center;
+    margin: 40px;
+  }
+  
+  .SectionRGBKeyboard {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+  }
+  
+  .SectionRGBMouse {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  
+  .RGBItemBox {
+    width: 230px;
+    height: 280px;
+    background-color: #EDEDED;
+    display: block;
+    border-radius: 10px;
+    margin: 15px;
+  }
+  
+  .RGBImgBox {
+    img {
+      height: 150px;
+      width: auto;
+      padding-top: 20px;
+    }
+  
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(0deg, rgba(88, 88, 88, 0.466), transparent);
+  }
+  
+  .RGBSpanBox {
+    width: 100%;
+    height: 30%;
+    color: black;
+    margin-top: 25px;
+  }
+  
+  .RGBPrice {
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    display: block;
+    padding-bottom: 5px;
+    background-color: #EDEDED;
+    font-size: x-large;
+  }
+  
+  .RGBItemTitle {
+    text-align: center;
+    width: 100%;
+    display: block;
+  }
+  
+
+
+
+
+  /*--------------------------NOTEBOOKS--------------------------*/
+  
+
+
+
+
+  .NotebookTitlePage {
+    font-weight: bold;
+    font-size: x-large;
+    margin-left: 30px;
+  }
+  
+  .DropdownNTitle {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+    .btn-secondary {
+      background-color:$pal-gray;
+    }
+  }
+  .Contenedor {
+    width: auto;
+    margin:0 10%;
+    .SectionItem-O {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+      .ItemContainer {
+        .ItemBox {
+          width: 230px;
+          height: 280px;
+          background-color: #EDEDED;
+          display: block;
+          border-radius: 10px;
+          margin: 5px;
+          .ItemImgBox {
+            display: flex;
+            justify-content: center;
+            background-image: linear-gradient(0deg, rgba(88, 88, 88, 0.466), transparent);
+            img {
+              height: 150px;
+              width: auto;
+              padding-top: 20px;
+            }
+          }
+          .ItemSpanBox {
+            width: 100%;
+            height: 30%;
+            color: black;
+            margin-top: 25px;
+            overflow: hidden;
+            .Title {
+              text-align: center;
+              width: 100%;
+              display: block;
+            }
+            .Price {
+              font-weight: bold;
+              text-align: center;
+              width: 100%;
+              display: block;
+              padding-bottom: 5px;
+              background-color: $pal-white;
+              font-size: x-large;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 599px) {
+    .SectionBanner {
+      display: none;
+    }
+
+    .Contenedor {
+      margin: 20px 0;
+      .SectionItem-O {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: inherit;
+        width: 100%;
+        .ItemContainer {
+          width: calc(100%/2);
+          margin: 0;
+          .ItemBox {
+            margin: 3px 3px;
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+ 
+  @media only screen and (min-width: 600px) and (max-width: 1024px) {
+    .Contenedor {
+      margin: 20px 0;
+      .SectionItem-O {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: inherit;
+        width: 100%;
+        .ItemContainer {
+          width: calc(100%/3);
+          margin: 0;
+          .ItemBox {
+            margin: 3px 3px;
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+
+
+
+
+
+  /*--------------------------OFERTAS--------------------------*/
+
+
+
+
+
+  .DropdownNTitleOfertas {
+    display: flex;
+    justify-content: space-between;
+    .btn-secondary {
+      background-color:$pal-gray;
+    }
+  }
+  
+  
+
+
+
+  /*--------------------------FOOTER--------------------------*/
+  
+
+
+
+
+  #Footer {
+    background-color: rgb(68, 68, 68);
+    width: 100%;
+    height: auto;
+    padding-bottom: 10px;
+
+    .LogoFooter {
+      width: 209px;
+      height: auto;
+      display: block;
+      padding: 5px 10px;
+      margin: 10px;
+    }
+    
+
+    .TextFooter {
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      padding: 10px;
+      margin: 10px;
+    
+      ul li {
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+    }
+
+    .IconsDiv {
+      display: flex;
+      justify-content: center;
+
+      .IconsStyle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        background-color: #DA0037;
+        border-radius: 20px;
+        width: 42px;
+        height: 42px;
+      }
+    }
+  }
+  
+  
+ 
+
+  
+  

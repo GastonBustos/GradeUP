@@ -1,0 +1,197 @@
+        /*INDICE*/
+    /*INDEX*/
+    
+    /*PCARMADA*/
+
+    /*INSUMOS*/
+
+    /*OFERTAS*/
+
+    /*REGISTRO*/
+
+    /*NOTEBOOKS*/
+
+
+
+
+/*HEAD-START*/
+* {margin: 0%; padding: 0%;}
+.font {font-family: 'Montserrat', sans-serif;}
+/*HEAD-END*/
+
+/*NORMALIZADORES*/
+.SectionBanner img {width: 100%;height: auto;margin-bottom: 50px;}/*BANNERS*/
+a {color: white;text-decoration: none;}
+body {color: white;background-color: rgb(23, 23, 23);}
+.ImgFactor {width: auto; height: 204; padding: 0px 0.5rem;}
+
+/*Header_Start*/
+
+/*Nav_start*/    
+
+#Nav {background-color: rgb(68, 68, 68);width: 100%;height: 90px;padding: 10px 0px;display: flex;justify-content: center;}
+
+/*Menú desplegable*/
+.CategoriesButton {font-weight: bold;}
+.NavLists {margin: auto;}
+ul, ol {list-style: none;}
+.NavLists li a  {background-color: rgb(68, 68 ,68 ); color: white; width: auto;padding:10px 15px;display: block;}
+.NavLists > li {float: left;}
+.NavLists li ul {display:none;position:absolute;min-width:140px;}
+.NavLists li:hover > ul {display: block;}
+.NavLists li ul li {position: relative;}
+.NavLists li ul li ul {right: -140px; top: 0px;}
+/*Fin de menu desplegable*/
+
+/*Logo caja*/
+
+.NavBoxLogo {display: flex;align-content: center;align-items: center; padding: 0px 15px;}
+
+.Logo {width: 209;height: 30.5;}
+
+            /*Fin logo caja*/
+
+        /* a Caja*/
+
+.NavABox {display: flex;align-content: center;align-items: center;}
+
+    /*Nav_end*/
+
+
+/*INDEX*/
+.GradientTop {width: 100%; height: 50px; background-image: linear-gradient(rgb(23, 23, 23), black);}
+.GradientDown {width: 100%;height: 50px;background-image: linear-gradient(black,rgb(23,23,23));}
+.SectionEspecialIndex {background-color: black; width: 100%; height: auto;}
+    .ImgEspecialIndex {width: 35%;height: auto;margin:15px;border-radius: 22px;}
+        .ImgLeft {margin-left:15%;}
+        .ImgRight {margin-left: 55%;}
+.TransitionDivIndex a{transition:all 0.5s;}
+.TransitionDivIndex a:hover {color: orangered;}
+
+/*PC ARMADA*/
+
+.SectionPcArmada {width: auto; height: auto; display: flex;align-items: center; justify-content: center;align-content: center;margin-bottom:5rem;border: solid white;}
+.ImgFactor img {width: auto; height: 204; padding: 5px;}/*IMAGES DE SECTIONS*/
+.DivPcDescripcionContainer {display: flex;flex-direction: row;align-content: center;align-items: center;justify-content: center;flex-wrap: wrap;}
+
+/*REGISTRO*/ 
+.GoogleLogo { width:20px;padding-left:5px;padding-right:5px ;}
+.FacebookLogo { width: 20px;padding-left:5px;padding-right:5px;}
+
+.GridPadre {
+    display: grid;
+    grid-template-columns: auto ;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    row-gap: 15px;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.h4 {grid-area:auto;width: 250px;}
+.Nombre {grid-area:auto;width: 250px;height:50px;text-align: center;border-radius: 5px;}
+.Mail {grid-area: auto;width: 250px;height:50px;text-align: center;border-radius: 5px;}
+.Checkbox {grid-area: auto;width: 250px;}
+.AcGoogle {grid-area: auto; background-color: #f4511e;display: flex; align-items: center;justify-content:center;width: 250px;height: 50px;border-radius: 5px;}
+.AcFacebook {grid-area: auto;background-color:#3f51b5;display: flex; align-items: center;justify-content:center;width: 250px;height: 50px;border-radius: 5px;}
+.FormRegistrar {width: 250px; height: 50px;border-radius: 5px;font-family:'Montserrat', sans-serif;color: black; font-size: 20px;}
+
+/*INUSMOS*/
+.TitleSection {text-align: center;margin-bottom: 25px;}
+.TitleDiv {display:flex;height: auto;width: 100%;justify-content: center;flex-wrap: wrap;}
+.ItemTitle {height: 300px;width: auto;margin: 13.5px; background-color: #1e1e1e;border-radius: 20px;transition: height .8s, width .8s;}
+.ItemImg {display: flex;justify-content: center;}
+.ItemImg img {height: 200px; width: auto;margin-top: 15px;background-image:linear-gradient(0deg, black, transparent);transition: height .8s, width .8s;}
+.ItemImg img:hover {height: 250px;width: auto;}
+.ItemTitle:hover {height: 350px;width: auto;}
+.ItemSpan {text-align: center;margin-top: 20px;font-size: x-large;font-weight: bold;}
+.Line {width: 100%;height: 5px;background:#DA0037;}
+
+
+.SectionTitleAnim {color: red;animation-name:Rgb;animation-iteration-count: infinite;;animation-duration:1000ms;}
+@keyframes Rgb {
+    0% {color: green;}
+    50% {color: blue;}
+    100% {color: red;}
+}
+
+
+.RGBSection {display: flex;flex-direction: column;}
+.RGBH3 {text-align: center;margin: 40px;}
+.SectionRGBKeyboard {display:flex;justify-content: center;flex-wrap: wrap;width: 100%;height: auto;margin-top: 30px;}
+.SectionRGBMouse {width: 100%;height: auto;display: flex;justify-content: center;flex-wrap: wrap;margin-top:10px;}
+    .RGBItemBox {width: 230px;height: 280px;background-color:#EDEDED;display: block;border-radius: 10px;margin: 15px;}
+        .RGBImgBox img {height: 150px;width: auto;padding-top: 20px;}
+        .RGBImgBox {display: flex;justify-content: center;background-image:linear-gradient(0deg, rgba(88, 88, 88, 0.466), transparent)}    
+        .RGBSpanBox {width:100%;height:30%;color: black;margin-top:25px;}
+            .RGBPrice {font-weight: bold;text-align: center;width: 100%;display: block;padding-bottom: 5px;background-color:#EDEDED;font-size: x-large;}
+            .RGBItemTitle {text-align: center;width: 100%;display: block;}
+
+
+/*MOBILE FIRST*/
+
+    /*PHONE*/
+
+    @media only screen and (max-width: 600px) {
+        /*Header*/
+        #Nav {flex-direction: column; justify-items: center; align-items: center; height: auto;}
+        .NavABox {display: block;}
+        .NavLists {display:flex;flex-direction: row; justify-content: center;flex-wrap: wrap;}
+        .Mobile {display:none}
+        /*Body*/
+        .SectionBanner {display: none;}
+        .TransitionDivIndex {display:none;}
+        .TitleDiv {display:none;}
+        .TitleSection {display: none;}
+        /*Footer*/
+        .LogoContainer {display: none;}
+        #Footer {display: block; height: 200px;}
+        .a{display: none;}
+        .IconsStyle {margin:10px;}
+
+    }
+
+    /*TABLET*/
+    @media only screen and (min-width:600px) and (max-width:1024px) {
+        /*Header*/
+        #Nav {flex-direction: column; justify-items: center; align-items: center; height: auto;}
+        .NavLists {display:flex;flex-direction: row; justify-content: center;flex-wrap: wrap;}
+        .Mobile {display:none}
+
+        /*Body*/
+        
+        /*Footer*/
+        .LogoContainer {display: none;}
+        .IconsStyle {margin:10px;}
+
+    }
+    /*PC*/
+    @media only screen and (min-width:1024px) {
+        /*Header*/
+
+        /*Body*/
+        
+        /*Footer*/
+        #Footer {display:flex; justify-content: space-around; align-items: center;}
+        .IconsStyle {margin:10px;}
+    }
+
+/*Footer*/
+#Footer {background-color: rgb(68, 68, 68);width: 100%; height: 260px;}
+.LogoFooter {width: 209;height: 30.5;display: block;padding: 5px 10px;margin: 10px;}
+.TextFooter {display:flex;text-align: center;flex-direction: column;padding: 10px; margin: 10px;}
+.TextFooter ul li {margin-top: 5px; margin-bottom: 5px;}
+/*Footer Icons*/
+.IconsDiv {display:flex;justify-content: center;}
+.IconsStyle {display:flex;align-items:center;justify-content: center;color: white; background-color: #DA0037; border-radius: 20px; width: 42px;height: 42px;}
+
+
+
+
+
+
+
+ 
