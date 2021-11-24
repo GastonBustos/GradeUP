@@ -809,6 +809,7 @@ body {
     text-align: center;
   }
   
+  
   .h4 {
     grid-area: auto;
     width: 250px;
@@ -864,163 +865,25 @@ body {
 
   /*--------------------------INSUMOS--------------------------*/
   
-  
 
-  
 
-  .TitleSection {
-    text-align: center;
-    margin-bottom: 25px;
-  }
-  
-  .TitleDiv {
-    display: flex;
-    height: auto;
-    width: 100%;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .ItemTitle {
-    height: 300px;
-    width: auto;
-    margin: 13.5px;
-    background-color: #1e1e1e;
-    border-radius: 20px;
-    transition: height .8s, width .8s;
-  }
-  
-  .ItemImg {
-    display: flex;
-    justify-content: center;
-  
-    img {
-      height: 200px;
-      width: auto;
-      margin-top: 15px;
-      background-image: linear-gradient(0deg, black, transparent);
-      transition: height .8s, width .8s;
-  
-      &:hover {
-        height: 250px;
-        width: auto;
+
+
+  @media only screen and (max-width: 599px) {
+    .d-ih {
+      flex-direction: column;
+      align-content: center;
+      .dropdown {
+        display: flex;
+        justify-content: center;
+      }
+      .mr-10 {
+        margin: 0px;
       }
     }
   }
   
-  .ItemTitle:hover {
-    height: 350px;
-    width: auto;
-  }
   
-  .ItemSpan {
-    text-align: center;
-    margin-top: 20px;
-    font-size: x-large;
-    font-weight: bold;
-  }
-  
-  .Line {
-    width: 100%;
-    height: 5px;
-    background: #DA0037;
-  }
-  
-  .SectionTitleAnim {
-    color: red;
-    animation-name: Rgb;
-    animation-iteration-count: infinite;
-    animation-duration: 1000ms;
-  }
-  
-  @keyframes Rgb {
-    0% {
-      color: green;
-    }
-  
-    50% {
-      color: blue;
-    }
-  
-    100% {
-      color: red;
-    }
-  }
-  
-  .RGBSection {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .RGBH3 {
-    text-align: center;
-    margin: 40px;
-  }
-  
-  .SectionRGBKeyboard {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-    height: auto;
-    margin-top: 30px;
-  }
-  
-  .SectionRGBMouse {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 10px;
-  }
-  
-  .RGBItemBox {
-    width: 230px;
-    height: 280px;
-    background-color: #EDEDED;
-    display: block;
-    border-radius: 10px;
-    margin: 15px;
-  }
-  
-  .RGBImgBox {
-    img {
-      height: 150px;
-      width: auto;
-      padding-top: 20px;
-    }
-  
-    display: flex;
-    justify-content: center;
-    background-image: linear-gradient(0deg, rgba(88, 88, 88, 0.466), transparent);
-  }
-  
-  .RGBSpanBox {
-    width: 100%;
-    height: 30%;
-    color: black;
-    margin-top: 25px;
-  }
-  
-  .RGBPrice {
-    font-weight: bold;
-    text-align: center;
-    width: 100%;
-    display: block;
-    padding-bottom: 5px;
-    background-color: #EDEDED;
-    font-size: x-large;
-  }
-  
-  .RGBItemTitle {
-    text-align: center;
-    width: 100%;
-    display: block;
-  }
-  
-
-
 
 
   /*--------------------------NOTEBOOKS--------------------------*/
@@ -1142,7 +1005,7 @@ body {
     }
   }
 
-
+  
 
 
 
@@ -1161,6 +1024,28 @@ body {
   }
   
   
+
+  /*--------------------------ERROR 404--------------------------*/
+
+
+
+
+
+  .Error404 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .TextErrorSpan {
+      text-align: center;
+    }
+    .TextError {
+      justify-content: center;
+    }
+
+  }
+
+
 
 
 
