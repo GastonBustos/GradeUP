@@ -54,6 +54,8 @@ body {
 }
 
 
+
+
 /*Media Nav-Footer PHONE*/
   @media only screen and (max-width: 599px) {
   
@@ -384,114 +386,125 @@ body {
 
   .Envios {
     display: flex;
-    flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: center;
     background-color: $pal-gray;
     margin-bottom:50px;
     border-top: $pal-red solid 2px;
     border-bottom: $pal-red solid 2px;
-
-    .Envios__Tarjeta {
-      max-width: 250px;
-      margin: 40px;
-      text-align: center;
-      border:$pal-white solid;
-
-      .Envios__Tarjeta__Icon {
-        margin: 10px;
-      }
-
-      .Envios__Tarjeta__Span {
-        font-size: x-large;
-
-        .Envios__Tarjeta__Span__Title {
-          color: $pal-red;
-          font-weight: bold;
-        }
-
-        .Envios__Tarjeta__Span__Description {
-          font-style: italic;
-        }
-      }
+    
+    .itemsEnvios {
+      flex-wrap: wrap;
+      justify-content: center;
     }
 
-    .Envios__Camion {
-      max-width: 250px;
-      margin: 40px;
-      text-align: center;
-      border:$pal-white solid;
+      .Envios__Tarjeta {
+        width: 300px;
+        height: 400px;
+        font-size: 1vw;
+        margin: 40px;
+        text-align: center;
+        border:$pal-white solid;
 
-      .Envios__Camion__Icon {
-        margin-bottom:10px;
-      }
-      .Envios__Camion__Span {
-        font-size: x-large;
-
-        .Envios__Camion__Span__Title {
-          color: $pal-red;
-          font-weight: bold;
+        .Envios__Tarjeta__Icon {
+          margin: 10px;
         }
 
-        .Envios__Camion__Span__Description {
-          font-style: italic;
-        }
-      }
-    }
-    .Envios__FastCamion {
-      max-width: 250px;
-      margin: 40px;
-      text-align: center;
-      border:$pal-white solid;
+        .Envios__Tarjeta__Span {
+          font-size: x-large;
 
-      .Envios__FastCamion__Icon {
-        margin-bottom:10px;
-      }
-
-      .Envios__FastCamion__Span {
-        font-size: x-large;
-
-        .Envios__FastCamion__Span__Title {
-          color: $pal-red;
-          font-weight: bold;
-        }
-        
-        .Envios__FastCamion__Span__Description {
-          font-style: italic;
-
-          .Envios__FastCamion__Span__Description--Terms {
-            text-decoration: underline;
-            color: $pal-white;
-            transition: 0.4s;
-          }
-          .Envios__FastCamion__Span__Description--Terms:hover {
+          .Envios__Tarjeta__Span__Title {
             color: $pal-red;
-          } 
+            font-weight: bold;
+          }
+
+          .Envios__Tarjeta__Span__Description {
+            font-style: italic;
+          }
         }
       }
-    }  
-    .Envios__CashBack {
-      max-width: 250px;
-      margin: 40px;
-      text-align: center;
-      border:$pal-white solid;
 
-      .Envios__CashBack__Icon {
-        margin:10px;
+      .Envios__Camion {
+        width: 300px;
+        height: 400px;
+        margin: 40px;
+        font-size: 1vw;
+        text-align: center;
+        border:$pal-white solid;
+
+        .Envios__Camion__Icon {
+          margin-bottom:10px;
+        }
+        .Envios__Camion__Span {
+          font-size: x-large;
+
+          .Envios__Camion__Span__Title {
+            color: $pal-red;
+            font-weight: bold;
+          }
+
+          .Envios__Camion__Span__Description {
+            font-style: italic;
+          }
+        }
       }
+      .Envios__FastCamion {
+        width: 300px;
+        height: 400px;
+        margin: 40px;
+        text-align: center;
+        border:$pal-white solid;
 
-      .Envios__CashBack__Span {
-        font-size: x-large;
-
-        .Envios__CashBack__Span__Title {
-          color: $pal-red;
-          font-weight: bold;
+        .Envios__FastCamion__Icon {
+          margin-bottom:10px;
         }
 
-        .Envios__CashBack__Span__Description {
-          font-style: italic;
+        .Envios__FastCamion__Span {
+          font-size: x-large;
+
+          .Envios__FastCamion__Span__Title {
+            color: $pal-red;
+            font-weight: bold;
+          }
+          
+          .Envios__FastCamion__Span__Description {
+            font-style: italic;
+
+            .Envios__FastCamion__Span__Description--Terms {
+              text-decoration: underline;
+              color: $pal-white;
+              transition: 0.4s;
+            }
+            .Envios__FastCamion__Span__Description--Terms:hover {
+              color: $pal-red;
+            } 
+          }
+        }
+      }  
+      .Envios__CashBack {
+        width: 300px;
+        height: 400px;
+        margin: 40px;
+        text-align: center;
+        border:$pal-white solid;
+
+        .Envios__CashBack__Icon {
+          margin:10px;
+        }
+
+        .Envios__CashBack__Span {
+          font-size: x-large;
+
+          .Envios__CashBack__Span__Title {
+            color: $pal-red;
+            font-weight: bold;
+          }
+
+          .Envios__CashBack__Span__Description {
+            font-style: italic;
+          }
         }
       }
-    }
   }
 
   .BannerMiddleImg img {
@@ -507,61 +520,64 @@ body {
       @media only screen and (max-width: 599px) {
             
         /*----------INDEX----------*/
+        .IndexSectionMargin {
+          margin: 0 0 auto ;
 
-        .TitleSectionOne {
-          text-align: center;
-        }
-        .SectionPcArmadaOne {
-          width: auto;
-
-          .ImgSectionOneMobile {
-            display: none;
+          .TitleSectionOne {
+            text-align: center;
           }
-
-          .SectionItem {
-            display: flex;
-            flex-wrap: wrap;
-            background-color: transparent;
-            width: 100%;
-
-            .ItemBoxes {
-              width: calc(100%/2); 
-              margin: 0px;
-
-              .PcArmadaItemBox {
-                width: auto;
-                margin:3px 3px;
+          .SectionPcArmadaOne {
+            width: auto;
+  
+            .ImgSectionOneMobile {
+              display: none;
+            }
+  
+            .SectionItem {
+              display: flex;
+              flex-wrap: wrap;
+              background-color: transparent;
+              width: 100%;
+  
+              .ItemBoxes {
+                width: calc(100%/2); 
+                margin: 0px;
+  
+                .PcArmadaItemBox {
+                  width: auto;
+                  margin:3px 3px;
+                }
               }
             }
           }
-        }
-      
-        .TitleSectionTwo {
-          text-align: center;
-        }
-        .SectionNotebookTwo {
-          width: auto;
-
-          .ImgSectionTwoMobile {
-            display: none;
+        
+          .TitleSectionTwo {
+            text-align: center;
           }
-
-          .SectionItem {
-            display: flex;
-            flex-wrap: wrap;
-            background-color: transparent;
-            width: 100%;
-
-            .ItemBoxes {
-              width: calc(100%/2); 
-              margin: 0px;
-
-              .NotebookItemBox {
-                width: auto;
-                margin:3px 3px;
-              }
+          .SectionNotebookTwo {
+            width: auto;
+  
+            .ImgSectionTwoMobile {
+              display: none;
+            }
+  
+            .SectionItem {
+              display: flex;
+              flex-wrap: wrap;
+              background-color: transparent;
+              width: 100%;
+  
+              .ItemBoxes {
+                width: calc(100%/2); 
+                margin: 0px;
+  
+                .NotebookItemBox {
+                  width: auto;
+                  margin:3px 3px;
+                }
+              } 
             } 
-          } 
+          }
         }
 
         .Envios {
@@ -569,44 +585,62 @@ body {
           align-items: center;
           width: auto;
 
-          .Envios__Tarjeta {
-            margin: 15px;
-            .Envios__Tarjeta__Icon {
-              width: 60px;
-              height: auto;
-            }
-            .Envios__Tarjeta__Span {
-              font-size: medium;
-            }
-          }
-          .Envios__Camion {
-            margin: 15px;
-            .Envios__Camion__Icon {
-              width: 60px;
-              height: auto;
-            }
-            .Envios__Camion__Span {
-              font-size: medium;
-            }
-          }
-          .Envios__FastCamion {
-            margin: 15px;
-            .Envios__FastCamion__Icon {
-              width: 60px;
-              height: auto;
-            }
-            .Envios__FastCamion__Span {
-              font-size: medium;
-            }
-          }
-          .Envios__CashBack {
-            margin: 15px;
-            .Envios__CashBack__Icon {
-              width: 60px;
-              height: auto;
-            }
-            .Envios__CashBack__Span {
-              font-size: medium;
+          .itemsEnvios {
+            flex-direction: column;
+
+            .EnviosWidth {
+
+              .Envios__Tarjeta {
+                margin: 15px;
+                width: auto;
+                height: auto;
+
+                .Envios__Tarjeta__Icon {
+                  width: 60px;
+                  height: auto;
+                }
+                .Envios__Tarjeta__Span {
+                  font-size: medium;
+                }
+              }
+              .Envios__Camion {
+                margin: 15px;
+                width: auto;
+                height: auto;
+
+                .Envios__Camion__Icon {
+                  width: 60px;
+                  height: auto;
+                }
+                .Envios__Camion__Span {
+                  font-size: medium;
+                }
+              }
+              .Envios__FastCamion {
+                margin: 15px;
+                width: auto;
+                height: auto;
+
+                .Envios__FastCamion__Icon {
+                  width: 60px;
+                  height: auto;
+                }
+                .Envios__FastCamion__Span {
+                  font-size: medium;
+                }
+              }
+              .Envios__CashBack {
+                margin: 15px;
+                width: auto;
+                height: auto;
+                .Envios__CashBack__Icon {
+                  width: 60px;
+                  height: auto;
+                }
+                .Envios__CashBack__Span {
+                  font-size: medium;
+                }
+              }
             }
           }
         }
@@ -621,106 +655,131 @@ body {
       @media only screen and (min-width: 600px) and (max-width: 1024px) {
 
         /*----------INDEX----------*/
+        .IndexSectionMargin {
+          margin: 0 0 auto ;
 
-        .TitleSectionOne {
-          text-align: center;
-        }
-        .SectionPcArmadaOne {
-          width: auto;
-
-          .ImgSectionOneMobile {
-            display: none;
+          .TitleSectionOne {
+            text-align: center;
           }
-
-          .SectionItem {
-            display: flex;
-            flex-wrap: wrap;
-            background-color: transparent;
-            width: 100%;
-
-            .ItemBoxes {
-              width: calc(100%/3); 
-              margin: 0px;
-
-              .PcArmadaItemBox {
-                width: auto;
-                margin:3px 3px;
+          .SectionPcArmadaOne {
+            width: auto;
+  
+            .ImgSectionOneMobile {
+              display: none;
+            }
+  
+            .SectionItem {
+              display: flex;
+              flex-wrap: wrap;
+              background-color: transparent;
+              width: 100%;
+  
+              .ItemBoxes {
+                width: calc(100%/3); 
+                margin: 0px;
+  
+                .PcArmadaItemBox {
+                  width: auto;
+                  margin:3px 3px;
+                }
               }
             }
           }
-        }
-      
-        .TitleSectionTwo {
-          text-align: center;
-        }
-        .SectionNotebookTwo {
-          width: auto;
-
-          .ImgSectionTwoMobile {
-            display: none;
+        
+          .TitleSectionTwo {
+            text-align: center;
+          }
+          .SectionNotebookTwo {
+            width: auto;
+  
+            .ImgSectionTwoMobile {
+              display: none;
+            }
+  
+            .SectionItem {
+              display: flex;
+              flex-wrap: wrap;
+              background-color: transparent;
+              width: 100%;
+  
+              .ItemBoxes {
+                width: calc(100%/3); 
+                margin: 0px;
+  
+                .NotebookItemBox {
+                  width: auto;
+                  margin:3px 3px;
+                }
+              } 
+            } 
           }
 
-          .SectionItem {
-            display: flex;
-            flex-wrap: wrap;
-            background-color: transparent;
-            width: 100%;
-
-            .ItemBoxes {
-              width: calc(100%/3); 
-              margin: 0px;
-
-              .NotebookItemBox {
-                width: auto;
-                margin:3px 3px;
-              }
-            } 
-          } 
         }
+        
 
         .Envios {
           flex-direction: column;
           align-items: center;
           width: auto;
 
-          .Envios__Tarjeta {
-            margin: 15px;
-            .Envios__Tarjeta__Icon {
-              width: 60px;
-              height: auto;
-            }
-            .Envios__Tarjeta__Span {
-              font-size: medium;
-            }
-          }
-          .Envios__Camion {
-            margin: 15px;
-            .Envios__Camion__Icon {
-              width: 60px;
-              height: auto;
-            }
-            .Envios__Camion__Span {
-              font-size: medium;
-            }
-          }
-          .Envios__FastCamion {
-            margin: 15px;
-            .Envios__FastCamion__Icon {
-              width: 60px;
-              height: auto;
-            }
-            .Envios__FastCamion__Span {
-              font-size: medium;
-            }
-          }
-          .Envios__CashBack {
-            margin: 15px;
-            .Envios__CashBack__Icon {
-              width: 60px;
-              height: auto;
-            }
-            .Envios__CashBack__Span {
-              font-size: medium;
+          .itemsEnvios {
+            flex-direction: row;
+
+            .EnviosWidth {
+
+              width: calc(100%/2);
+
+              .Envios__Tarjeta {
+                margin: 15px;
+                width: auto;
+                height: 250px;
+
+                .Envios__Tarjeta__Icon {
+                  width: 60px;
+                  height: auto;
+                }
+                .Envios__Tarjeta__Span {
+                  font-size: medium;
+                }
+              }
+              .Envios__Camion {
+                margin: 15px;
+                width: auto;
+                height: 250px;
+
+                .Envios__Camion__Icon {
+                  width: 60px;
+                  height: auto;
+                }
+                .Envios__Camion__Span {
+                  font-size: medium;
+                }
+              }
+              .Envios__FastCamion {
+                margin: 15px;
+                width: auto;
+                height: 250px;
+
+                .Envios__FastCamion__Icon {
+                  width: 60px;
+                  height: auto;
+                }
+                .Envios__FastCamion__Span {
+                  font-size: medium;
+                }
+              }
+              .Envios__CashBack {
+                margin: 15px;
+                width: auto;
+                height: 250px;
+                .Envios__CashBack__Icon {
+                  width: 60px;
+                  height: auto;
+                }
+                .Envios__CashBack__Span {
+                  font-size: medium;
+                }
+              }
             }
           }
         }
