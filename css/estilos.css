@@ -318,7 +318,7 @@ body {
   .SectionPcArmadaOne .SectionItem {
     align-items: center;
     background-color: #444444;
-    overflow: auto;
+    overflow: scroll;
     display: flex; }
     .SectionPcArmadaOne .SectionItem .PcArmadaItemBox {
       width: 230px;
@@ -383,7 +383,7 @@ body {
   .SectionNotebookTwo .SectionItem {
     align-items: center;
     background-color: #444444;
-    overflow: auto;
+    overflow: scroll;
     display: flex; }
     .SectionNotebookTwo .SectionItem .NotebookItemBox {
       width: 230px;

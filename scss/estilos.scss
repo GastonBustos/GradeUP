@@ -246,7 +246,7 @@ body {
     .SectionItem {
       align-items: center;
       background-color: #444444;
-      overflow: auto;
+      overflow: scroll;
       display: flex;
 
       .PcArmadaItemBox {
@@ -328,7 +328,7 @@ body {
     .SectionItem {
       align-items: center;
       background-color: $pal-gray;
-      overflow: auto;
+      overflow: scroll;
       display: flex;
 
       .NotebookItemBox {
