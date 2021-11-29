@@ -246,7 +246,7 @@ body {
     .SectionItem {
       align-items: center;
       background-color: #444444;
-      overflow: hidden;
+      overflow: auto;
       display: flex;
 
       .PcArmadaItemBox {
@@ -328,7 +328,7 @@ body {
     .SectionItem {
       align-items: center;
       background-color: $pal-gray;
-      overflow: hidden;
+      overflow: auto;
       display: flex;
 
       .NotebookItemBox {
@@ -1081,6 +1081,59 @@ body {
       background-color:$pal-gray;
     }
   }
+  .Contenedor {
+    width: auto;
+    margin:0 10%;
+    .SectionItem-O {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+      .ItemContainer {
+        .ItemBox {
+          width: 230px;
+          height: 280px;
+          background-color: #EDEDED;
+          display: block;
+          border-radius: 10px;
+          margin: 5px;
+          .ItemImgBox {
+            display: flex;
+            justify-content: center;
+            background-image: linear-gradient(0deg, rgba(88, 88, 88, 0.466), transparent);
+            img {
+              height: 150px;
+              width: auto;
+              padding-top: 20px;
+            }
+          }
+          .ItemSpanBox {
+            width: 100%;
+            height: 30%;
+            color: black;
+            margin-top: 25px;
+            overflow: hidden;
+            .Title {
+              text-align: center;
+              width: 100%;
+              display: block;
+            }
+            .Price {
+              font-weight: bold;
+              text-align: center;
+              width: 100%;
+              display: block;
+              padding-bottom: 5px;
+              background-color: $pal-white;
+              font-size: x-large;
+            }
+          }
+        }
+      }
+    }
+  }
+  
   
   
 

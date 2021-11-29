@@ -318,7 +318,7 @@ body {
   .SectionPcArmadaOne .SectionItem {
     align-items: center;
     background-color: #444444;
-    overflow: hidden;
+    overflow: auto;
     display: flex; }
     .SectionPcArmadaOne .SectionItem .PcArmadaItemBox {
       width: 230px;
@@ -383,7 +383,7 @@ body {
   .SectionNotebookTwo .SectionItem {
     align-items: center;
     background-color: #444444;
-    overflow: hidden;
+    overflow: auto;
     display: flex; }
     .SectionNotebookTwo .SectionItem .NotebookItemBox {
       width: 230px;
@@ -872,6 +872,49 @@ body {
   justify-content: space-between; }
   .DropdownNTitleOfertas .btn-secondary {
     background-color: #444444; }
+
+.Contenedor {
+  width: auto;
+  margin: 0 10%; }
+  .Contenedor .SectionItem-O {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%; }
+    .Contenedor .SectionItem-O .ItemContainer .ItemBox {
+      width: 230px;
+      height: 280px;
+      background-color: #EDEDED;
+      display: block;
+      border-radius: 10px;
+      margin: 5px; }
+      .Contenedor .SectionItem-O .ItemContainer .ItemBox .ItemImgBox {
+        display: flex;
+        justify-content: center;
+        background-image: linear-gradient(0deg, rgba(88, 88, 88, 0.466), transparent); }
+        .Contenedor .SectionItem-O .ItemContainer .ItemBox .ItemImgBox img {
+          height: 150px;
+          width: auto;
+          padding-top: 20px; }
+      .Contenedor .SectionItem-O .ItemContainer .ItemBox .ItemSpanBox {
+        width: 100%;
+        height: 30%;
+        color: black;
+        margin-top: 25px;
+        overflow: hidden; }
+        .Contenedor .SectionItem-O .ItemContainer .ItemBox .ItemSpanBox .Title {
+          text-align: center;
+          width: 100%;
+          display: block; }
+        .Contenedor .SectionItem-O .ItemContainer .ItemBox .ItemSpanBox .Price {
+          font-weight: bold;
+          text-align: center;
+          width: 100%;
+          display: block;
+          padding-bottom: 5px;
+          background-color: #EDEDED;
+          font-size: x-large; }
 
 /*--------------------------ERROR 404--------------------------*/
 .Error404 {
