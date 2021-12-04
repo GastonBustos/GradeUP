@@ -54,6 +54,7 @@ body {
 }
 
 
+
 /*Media Nav-Footer PHONE*/
   @media only screen and (max-width: 599px) {
   
@@ -672,82 +673,99 @@ body {
 
   /*--------------------------REGISTRO--------------------------*/
   
-
-
-
-
-  .GoogleLogo, .FacebookLogo {
-    width: 35px;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-  
-  .GridPadre {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto auto auto auto auto;
-    row-gap: 15px;
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    text-align: center;
-  }
-  
-  
-  .h4 {
-    grid-area: auto;
-    width: 250px;
-  }
-  
-  .Nombre, .Mail {
-    grid-area: auto;
-    width: 250px;
-    height: 50px;
-    text-align: center;
-    border-radius: 5px;
-  }
-  
-  .Checkbox {
-    grid-area: auto;
-    width: 250px;
-  }
-  
-  .AcGoogle {
-    grid-area: auto;
-    background-color: $googleplus;
+  .Form {
+    margin: 50px;
+    width: auto;
     display: flex;
-    align-items: center;
     justify-content: center;
-    width: 250px;
-    height: 50px;
-    border-radius: 5px;
-  }
-  
-  .AcFacebook {
-    grid-area: auto;
-    background-color: $facebook;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 250px;
-    height: 50px;
-    border-radius: 5px;
-  }
-  
-  .FormRegistrar {
-    width: 250px;
-    height: 50px;
-    border-radius: 5px;
-    font-family: 'Montserrat', sans-serif;
-    color: black;
-    font-size: 20px;
-  }
-  
+
+    .Registro {
+      height: auto;
+      width: 400px;
+      background-color: $pal-white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+
+      .AcGoogle {
+        width: 250px;
+        height: 50px;
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: solid 1px #aaaa;
+
+        .RSpan {
+          color: black;
+        }
+        .RSpan:hover {
+          color: black;
+        }
+        .GoogleLogo {
+          height: 18px;
+          margin-right: 5px;
+        }
+
+      }
 
 
 
+      .FormTitle {
+        font-size: xx-large;
+        font-weight: bold;
+        color: $pal-black;
+        margin: 0;
+      }
+  
+      .FormTitleLine {
+        width: 300px;
+        max-width: 500px;
+        height: 2px;
+        background-color: $pal-red;
+      }
+      .FormIn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+  
+      .FormInputs {
+        border: solid 1px $light-gray;
+        margin: 10px;
+        height: 50px;
+        width: 250px;
+      }
+  
+      .FormRegistrar {
+        border: solid 1px $light-gray;
+        margin: 10px;
+        height: 50px;
+        width: 250px;
+        color: black;
+        font-weight: bolder;
+        background-color: #ffffff;
+      }
+    }
+    
+  }
+
+
+  @media only screen and (max-width: 599px) {
+    .Form {
+      margin: 0;
+      .Registro {
+        width: auto;
+        height: auto;
+        padding: 10px;
+
+        .FormTitleLine {
+          width: 150px;
+        }
+      }
+    }
+  }
 
   /*--------------------------INSUMOS--------------------------*/
   
