@@ -54,8 +54,6 @@ body {
 }
 
 
-
-
 /*Media Nav-Footer PHONE*/
   @media only screen and (max-width: 599px) {
   
@@ -86,6 +84,7 @@ body {
   .IconsStyle {
     margin: 10px;
   }
+
  }
  /*TABLET*/
  @media only screen and (min-width: 600px) and (max-width: 1024px) {
@@ -105,97 +104,6 @@ body {
   }
 
 
-
-
-
-  /*_________________BLOQUES_________________*/
-  
-  
-  
-  
-  
-  /*.SectionItem-D {
-    align-items: center;
-    background-color: #444444;
-    overflow: hidden;
-    display: flex;
-  }
-  .SectionItem-O {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    
-    
-  }
-  .ItemBox {
-    width: 230px;
-    height: 280px;
-    background-color: #EDEDED;
-    display: block;
-    border-radius: 10px;
-    margin: 5px;
-  }
-  .ItemImgBox {
-    display: flex;
-    justify-content: center;
-    background-image: linear-gradient(0deg, rgba(88, 88, 88, 0.466), transparent);
-    img {
-      height: 150px;
-      width: auto;
-      padding-top: 20px;
-    }
-  }
-  .ItemSpanBox {
-    width: 100%;
-    height: 30%;
-    color: black;
-    margin-top: 25px;
-    overflow: hidden;
-  }
-  .Title {
-    text-align: center;
-    width: 100%;
-    display: block;
-  }
-  .Price {
-    font-weight: bold;
-    text-align: center;
-    width: 100%;
-    display: block;
-    padding-bottom: 5px;
-    background-color: $pal-white;
-    font-size: x-large;
-  }*/
-  
-  /*Bloque Item Venta
-  .SectionItem-O {
-    @extend %SectionItemO0;
-    .ItemBox {
-      a {
-      @extend %ItemBox1;
-        .ItemImgBox {
-          @extend %ItemImgBox2;
-        }
-        .ItemSpanBox {
-          @extend %ItemSpanBox3;
-          .Price {
-            @extend %Price;
-          }
-          .Title {
-            @extend %ItemTitle;
-          }
-        } 
-      }
-    }
-  }*/
-  
-
-
-
-
-  /*HEADER*/
-  
   #Nav {
     background-color: rgb(68, 68, 68);
   }
@@ -209,99 +117,71 @@ body {
 
 
 
+
+  /*_________________BLOQUES_________________*/
   
-  /*--------------------------INDEX--------------------------*/
-
-
-
-
-  
-  /*Seccion Uno*/
-  .TitleSectionOne {
-    margin:30px auto 30px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    max-width: 1290px;
-    h3 {
-      font-weight: bold;
-      font-style: italic;
-    }
-  }
-  .PCDescriptionOne {
-    text-decoration: underline;
-    color: #DA0037;
-    transition: 0.4s;
-    display:block;
-  
-    &:hover {
-      color: #EDEDED;
-    }
-  }
-  .SectionPcArmadaOne {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-    
-    .SectionItem {
-      align-items: center;
-      background-color: #444444;
-      overflow: scroll;
-      display: flex;
-
-      .PcArmadaItemBox {
-        width: 230px;
-        height: 280px;
-        background-color: #EDEDED;
-        display: block;
-        border-radius: 10px;
-        margin: 15px;
-
-        .PcArmadaImgBox {
-          img {
-            height: 150px;
-            width: auto;
-            padding-top: 20px;
-          }
-        
-          display: flex;
-          justify-content: center;
-          background-image: linear-gradient(0deg, rgba(88, 88, 88, 0.466), transparent);
-        }   
-        .PcArmadaSpanBox {
-          width: 100%;
-          height: 30%;
-          color: black;
-          margin-top: 25px;
-          overflow: hidden;
-
-          .PcArmadaItemTitle {
-            text-align: center;
-            width: 100%;
+    /*----ITEMS VENTA----*/
+    .Contenedor {
+      width: auto;
+      margin:0 10%;
+      .SectionItem-O {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        .ItemContainer {
+          .ItemBox {
+            width: 230px;
+            height: 280px;
+            background-color: #EDEDED;
             display: block;
-          }
-
-          .PcArmadaPrice {
-            font-weight: bold;
-            text-align: center;
-            width: 100%;
-            display: block;
-            padding-bottom: 5px;
-            background-color: $pal-white;
-            font-size: x-large;
+            border-radius: 10px;
+            margin: 5px;
+            .ItemImgBox {
+              display: flex;
+              justify-content: center;
+              background-image: linear-gradient(0deg, rgba(88, 88, 88, 0.466), transparent);
+              img {
+                height: 150px;
+                width: auto;
+                padding-top: 20px;
+              }
+            }
+            .ItemSpanBox {
+              width: 100%;
+              height: 30%;
+              color: black;
+              margin-top: 25px;
+              overflow: hidden;
+              .Title {
+                text-align: center;
+                width: 100%;
+                display: block;
+                font-weight: 600;
+              }
+              .Price {
+                font-weight: bold;
+                text-align: center;
+                width: 100%;
+                display: block;
+                padding-bottom: 5px;
+                background-color: $pal-white;
+                font-size: x-large;
+              }
+            }
           }
         }
       }
-    } 
-  }
-  .PcArmadaImg {
-    height: 400px;
-    width: auto;
-  }
+    }
 
-  /*Seccion Dos*/
-  
-  .TitleSectionTwo {
+
+
+
+
+  /*--------------------------INDEX--------------------------*/
+  /*Seccion 1-2-3*/
+  .TitleSectionIndexMOD1 {
     margin:30px auto 30px;
     display: flex;
     justify-content: center;
@@ -312,16 +192,23 @@ body {
       font-style: italic;
     }
   }
-  .PDescriptionTwo {
-    text-decoration: underline;
-    color: $pal-red;
-    transition: 0.4s;
-  
-    &:hover {
-      color: $pal-white;
+  .AIndexMOD1 {
+    width: 200px;
+
+    .DescriptioIndexMOD1 {
+      text-decoration: underline;
+      color: #DA0037;
+      transition: 0.4s;
+      display:block;
+      font-weight: 600;
+    
+      &:hover {
+        color: #EDEDED;
+      }
     }
   }
-  .SectionNotebookTwo {
+
+  .SectionIndexMOD1 {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
@@ -331,7 +218,7 @@ body {
       overflow: scroll;
       display: flex;
 
-      .NotebookItemBox {
+      .MOD1ItemBox {
         width: 230px;
         height: 280px;
         background-color: $pal-white;
@@ -339,7 +226,7 @@ body {
         border-radius: 10px;
         margin: 15px;
 
-        .NotebookImgBox {
+        .MOD1ImgBox {
           img {
             height: 150px;
             width: auto;
@@ -351,20 +238,21 @@ body {
           background-image: linear-gradient(0deg, rgba(88, 88, 88, 0.466), transparent);
         }
 
-        .NotebookSpanBox {
+        .MOD1SpanBox {
           width: 100%;
           height: 30%;
           color: black;
           margin-top: 25px;
           overflow: hidden;
 
-          .NotebookItemTitle {
+          .MOD1ItemTitle {
             text-align: center;
             width: 100%;
             display: block;
+            font-weight: 600;
           }
 
-          .NotebookPrice {
+          .MOD1Price {
             font-weight: bold;
             text-align: center;
             width: 100%;
@@ -377,12 +265,13 @@ body {
       }
     }
   }
-  .NotebookImg {
+
+  .MOD1Img {
     height: 400px;
     width: auto;
   }
 
-  /*Seccion Tres*/
+  /*Seccion Envios*/
 
   .Envios {
     display: flex;
@@ -516,20 +405,20 @@ body {
   
 
 
-  /*Mobile First - Celular*/
+      /*Mobile First - Celular*/
       @media only screen and (max-width: 599px) {
             
         /*----------INDEX----------*/
         .IndexSectionMargin {
           margin: 0 0 auto ;
 
-          .TitleSectionOne {
+          .TitleSectionIndexMOD1{
             text-align: center;
           }
-          .SectionPcArmadaOne {
+          .SectionIndexMOD1 {
             width: auto;
   
-            .ImgSectionOneMobile {
+            .ImgSectionMOD1 {
               display: none;
             }
   
@@ -543,35 +432,7 @@ body {
                 width: calc(100%/2); 
                 margin: 0px;
   
-                .PcArmadaItemBox {
-                  width: auto;
-                  margin:3px 3px;
-                }
-              }
-            }
-          }
-        
-          .TitleSectionTwo {
-            text-align: center;
-          }
-          .SectionNotebookTwo {
-            width: auto;
-  
-            .ImgSectionTwoMobile {
-              display: none;
-            }
-  
-            .SectionItem {
-              display: flex;
-              flex-wrap: wrap;
-              background-color: transparent;
-              width: 100%;
-  
-              .ItemBoxes {
-                width: calc(100%/2); 
-                margin: 0px;
-  
-                .NotebookItemBox {
+                .MOD1ItemBox {
                   width: auto;
                   margin:3px 3px;
                 }
@@ -644,12 +505,7 @@ body {
             }
           }
         }
-        /*Body*/
-        
-        
-      
-      
-        
+
       }
       /*Tablet*/
       @media only screen and (min-width: 600px) and (max-width: 1024px) {
@@ -658,13 +514,16 @@ body {
         .IndexSectionMargin {
           margin: 0 0 auto ;
 
-          .TitleSectionOne {
+          .AIndexMOD1 {
+            width: auto;
+          }
+          .TitleSectionIndexMOD1 {
             text-align: center;
           }
-          .SectionPcArmadaOne {
+          .SectionIndexMOD1 {
             width: auto;
   
-            .ImgSectionOneMobile {
+            .ImgSectionMOD1 {
               display: none;
             }
   
@@ -678,45 +537,15 @@ body {
                 width: calc(100%/3); 
                 margin: 0px;
   
-                .PcArmadaItemBox {
-                  width: auto;
-                  margin:3px 3px;
-                }
-              }
-            }
-          }
-        
-          .TitleSectionTwo {
-            text-align: center;
-          }
-          .SectionNotebookTwo {
-            width: auto;
-  
-            .ImgSectionTwoMobile {
-              display: none;
-            }
-  
-            .SectionItem {
-              display: flex;
-              flex-wrap: wrap;
-              background-color: transparent;
-              width: 100%;
-  
-              .ItemBoxes {
-                width: calc(100%/3); 
-                margin: 0px;
-  
-                .NotebookItemBox {
+                .MOD1ItemBox {
                   width: auto;
                   margin:3px 3px;
                 }
               } 
             } 
           }
-
         }
         
-
         .Envios {
           flex-direction: column;
           align-items: center;
@@ -798,8 +627,6 @@ body {
             margin-right: 0.5rem;
           }
         }
-      
-        /*Body*/
       
         /*Footer*/
       
@@ -965,58 +792,7 @@ body {
       background-color:$pal-gray;
     }
   }
-  .Contenedor {
-    width: auto;
-    margin:0 10%;
-    .SectionItem-O {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-      width: 100%;
-      .ItemContainer {
-        .ItemBox {
-          width: 230px;
-          height: 280px;
-          background-color: #EDEDED;
-          display: block;
-          border-radius: 10px;
-          margin: 5px;
-          .ItemImgBox {
-            display: flex;
-            justify-content: center;
-            background-image: linear-gradient(0deg, rgba(88, 88, 88, 0.466), transparent);
-            img {
-              height: 150px;
-              width: auto;
-              padding-top: 20px;
-            }
-          }
-          .ItemSpanBox {
-            width: 100%;
-            height: 30%;
-            color: black;
-            margin-top: 25px;
-            overflow: hidden;
-            .Title {
-              text-align: center;
-              width: 100%;
-              display: block;
-            }
-            .Price {
-              font-weight: bold;
-              text-align: center;
-              width: 100%;
-              display: block;
-              padding-bottom: 5px;
-              background-color: $pal-white;
-              font-size: x-large;
-            }
-          }
-        }
-      }
-    }
-  }
+  
   
   @media only screen and (max-width: 599px) {
     .SectionBanner {
@@ -1081,61 +857,8 @@ body {
       background-color:$pal-gray;
     }
   }
-  .Contenedor {
-    width: auto;
-    margin:0 10%;
-    .SectionItem-O {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-      width: 100%;
-      .ItemContainer {
-        .ItemBox {
-          width: 230px;
-          height: 280px;
-          background-color: #EDEDED;
-          display: block;
-          border-radius: 10px;
-          margin: 5px;
-          .ItemImgBox {
-            display: flex;
-            justify-content: center;
-            background-image: linear-gradient(0deg, rgba(88, 88, 88, 0.466), transparent);
-            img {
-              height: 150px;
-              width: auto;
-              padding-top: 20px;
-            }
-          }
-          .ItemSpanBox {
-            width: 100%;
-            height: 30%;
-            color: black;
-            margin-top: 25px;
-            overflow: hidden;
-            .Title {
-              text-align: center;
-              width: 100%;
-              display: block;
-            }
-            .Price {
-              font-weight: bold;
-              text-align: center;
-              width: 100%;
-              display: block;
-              padding-bottom: 5px;
-              background-color: $pal-white;
-              font-size: x-large;
-            }
-          }
-        }
-      }
-    }
-  }
-  
-  
-  
+ 
+
 
   /*--------------------------ERROR 404--------------------------*/
 
@@ -1147,6 +870,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 20vw;
+    margin-bottom: 20vw;
 
     .TextErrorSpan {
       text-align: center;
@@ -1188,7 +913,13 @@ body {
       flex-direction: column;
       padding: 10px;
       margin: 10px;
-    
+      
+      .FootTitle {
+        font-weight: 600;
+        color:#DA0037; 
+        margin:10px;
+      }
+
       ul li {
         margin-top: 5px;
         margin-bottom: 5px;
