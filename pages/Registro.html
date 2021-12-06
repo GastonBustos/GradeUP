@@ -1,5 +1,4 @@
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,7 +14,6 @@
     <script src="https://kit.fontawesome.com/a9c2ed4452.js" crossorigin="anonymous"></script>
 
 </head>
-
 <body class="font">
 
     <!-------------------------------------------------------------HEADER------------------------------------------------------------->
@@ -46,7 +44,7 @@
 
     <!-------------------------------------------------------------FORMULARIO------------------------------------------------------------->
 
-    <div class="Form">
+    <div class="Form mt-100 mb-100">
         <div class="Registro">
             <h2 class="FormTitle">Registro</h2>
 
@@ -57,17 +55,21 @@
                 <span class="RSpan">Continuar con Google</span>
             </a>
 
-            <form action="#" method="post" enctype="application/x-www-form-urlencoded" class="FormIn">
+            <form action="Error404.html" method="post" enctype="application/x-www-form-urlencoded" class="FormIn">
 
                 <input type="name" name="Nombre" placeholder="Nombre" class="FormInputs">
 
                 <input type="email" name="Mail" placeholder="Mail" class="FormInputs">
 
-                <input type="email" name="Contraseña" placeholder="Contraseña" class="FormInputs">
+                <input type="password" name="Contraseña" placeholder="Contraseña" class="FormInputs">
 
                 <div><input type="checkbox" name="notificaciones"><label style="color: black;">¿Desea recibir notificaciones?</label></div>
 
                 <input type="submit" value="Registrarse" class="FormRegistrar">
+
+                <a href="#">
+                    <p class="TextForm">Soy cliente</p>
+                </a>
 
             </form>
         </div>
@@ -79,9 +81,9 @@
         <div class="TextFooter">
             <h4 class="FootTitle">ATENCION AL CLIENTE</h4>
             <ul>
-                <li>mailfalso@gmail.com</li>
-                <li>+54 351 245 0166</li>
-                <li>Whatsapp +54 351 256 3699</li>
+                <li><a href="mailto: mailfalso@gmail.com" style="text-decoration: underline;"> mailfalso@gmail.com </a></li>
+                <li><a href="tel:+54 351 245 0166" style="text-decoration: underline;">+54 351 245 0166</a></li>
+                <li><a href="tel:+54 351 256 3699" style="text-decoration: underline;">Whatsapp +54 351 256 3699</a></li>
                 <li>Lun. a Vie. de 9 a 19h. Sab de 10 a 14h.</li>
             </ul>
         </div>
@@ -107,6 +109,5 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 
-</body>
-
+    </body>
 </html>

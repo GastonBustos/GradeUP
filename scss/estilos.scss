@@ -32,7 +32,11 @@ body {
     a {
         color: white;
         text-decoration: none;
-      }
+    }
+
+    a:hover {
+      color: white;
+    }
 
     li, ul {
     list-style: none;
@@ -96,13 +100,8 @@ body {
  }
 
  /*Footer Style*/
-  #Footer {
-  display: block;
-  height: 200px;
-  }
-  .IconsStyle {
-  margin: 10px;
-  }
+  
+  
 
 
   #Nav {
@@ -415,6 +414,10 @@ body {
 
           .TitleSectionIndexMOD1{
             text-align: center;
+
+            .AIndexMOD1 {
+              width: auto;
+            }
           }
           .SectionIndexMOD1 {
             width: auto;
@@ -674,7 +677,6 @@ body {
   /*--------------------------REGISTRO--------------------------*/
   
   .Form {
-    margin: 50px;
     width: auto;
     display: flex;
     justify-content: center;
@@ -687,6 +689,7 @@ body {
       flex-direction: column;
       align-items: center;
       padding: 20px;
+      border-radius: 10px;
 
       .AcGoogle {
         width: 250px;
@@ -736,6 +739,7 @@ body {
         margin: 10px;
         height: 50px;
         width: 250px;
+        padding-left: 10px;
       }
   
       .FormRegistrar {
@@ -747,6 +751,12 @@ body {
         font-weight: bolder;
         background-color: #ffffff;
       }
+
+      .TextForm {
+        color: black;
+        text-decoration: underline;
+        font-weight: bolder;
+      }
     }
     
   }
@@ -754,11 +764,11 @@ body {
 
   @media only screen and (max-width: 599px) {
     .Form {
-      margin: 0;
+
       .Registro {
         width: auto;
         height: auto;
-        padding: 10px;
+        padding: 15px 5px;
 
         .FormTitleLine {
           width: 150px;
@@ -780,6 +790,7 @@ body {
       .dropdown {
         display: flex;
         justify-content: center;
+        margin: 5px;
       }
       .mr-10 {
         margin: 0px;
@@ -799,7 +810,7 @@ body {
   .NotebookTitlePage {
     font-weight: bold;
     font-size: x-large;
-    margin-left: 30px;
+    margin-left: 15px;
   }
   
   .DropdownNTitle {

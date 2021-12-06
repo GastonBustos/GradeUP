@@ -45,6 +45,9 @@
 .m-50 {
   margin: 50px; }
 
+.m-100 {
+  margin: 100px; }
+
 .mr-auto {
   margin-right: auto; }
 
@@ -68,6 +71,9 @@
 
 .mr-50 {
   margin-right: 50px; }
+
+.mr-100 {
+  margin-right: 100px; }
 
 .ml-auto {
   margin-left: auto; }
@@ -93,6 +99,9 @@
 .ml-50 {
   margin-left: 50px; }
 
+.ml-100 {
+  margin-left: 100px; }
+
 .mt-auto {
   margin-top: auto; }
 
@@ -116,6 +125,9 @@
 
 .mt-50 {
   margin-top: 50px; }
+
+.mt-100 {
+  margin-top: 100px; }
 
 .mb-auto {
   margin-bottom: auto; }
@@ -141,6 +153,9 @@
 .mb-50 {
   margin-bottom: 50px; }
 
+.mb-100 {
+  margin-bottom: 100px; }
+
 /*INDICE*/
 /*INDEX*/
 /*PCARMADA*/
@@ -159,6 +174,8 @@ body {
   body a {
     color: white;
     text-decoration: none; }
+  body a:hover {
+    color: white; }
   body li, body ul {
     list-style: none;
     margin: 0px;
@@ -200,13 +217,6 @@ body {
     display: none; } }
 
 /*Footer Style*/
-#Footer {
-  display: block;
-  height: 200px; }
-
-.IconsStyle {
-  margin: 10px; }
-
 #Nav {
   background-color: #444444; }
 
@@ -425,6 +435,8 @@ body {
     margin: 0 0 auto; }
     .IndexSectionMargin .TitleSectionIndexMOD1 {
       text-align: center; }
+      .IndexSectionMargin .TitleSectionIndexMOD1 .AIndexMOD1 {
+        width: auto; }
     .IndexSectionMargin .SectionIndexMOD1 {
       width: auto; }
       .IndexSectionMargin .SectionIndexMOD1 .ImgSectionMOD1 {
@@ -581,7 +593,6 @@ body {
 
 /*--------------------------REGISTRO--------------------------*/
 .Form {
-  margin: 50px;
   width: auto;
   display: flex;
   justify-content: center; }
@@ -592,7 +603,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px; }
+    padding: 20px;
+    border-radius: 10px; }
     .Form .Registro .AcGoogle {
       width: 250px;
       height: 50px;
@@ -626,7 +638,8 @@ body {
       border: solid 1px #c0c0c0;
       margin: 10px;
       height: 50px;
-      width: 250px; }
+      width: 250px;
+      padding-left: 10px; }
     .Form .Registro .FormRegistrar {
       border: solid 1px #c0c0c0;
       margin: 10px;
@@ -635,16 +648,18 @@ body {
       color: black;
       font-weight: bolder;
       background-color: #ffffff; }
+    .Form .Registro .TextForm {
+      color: black;
+      text-decoration: underline;
+      font-weight: bolder; }
 
 @media only screen and (max-width: 599px) {
-  .Form {
-    margin: 0; }
-    .Form .Registro {
-      width: auto;
-      height: auto;
-      padding: 10px; }
-      .Form .Registro .FormTitleLine {
-        width: 150px; } }
+  .Form .Registro {
+    width: auto;
+    height: auto;
+    padding: 15px 5px; }
+    .Form .Registro .FormTitleLine {
+      width: 150px; } }
 
 /*--------------------------INSUMOS--------------------------*/
 @media only screen and (max-width: 599px) {
@@ -653,7 +668,8 @@ body {
     align-content: center; }
     .d-ih .dropdown {
       display: flex;
-      justify-content: center; }
+      justify-content: center;
+      margin: 5px; }
     .d-ih .mr-10 {
       margin: 0px; } }
 
@@ -661,7 +677,7 @@ body {
 .NotebookTitlePage {
   font-weight: bold;
   font-size: x-large;
-  margin-left: 30px; }
+  margin-left: 15px; }
 
 .DropdownNTitle {
   display: flex;
