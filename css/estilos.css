@@ -219,6 +219,9 @@ body {
 /*Footer Style*/
 #Nav {
   background-color: #444444; }
+  #Nav .actual {
+    color: #DA0037 !important;
+    font-style: italic; }
 
 .Logo {
   width: 209;
@@ -261,9 +264,9 @@ body {
           text-align: center;
           width: 100%;
           display: block;
-          font-weight: 600; }
+          font-weight: 400; }
         .Contenedor .SectionItem-O .ItemContainer .ItemBox .ItemSpanBox .Price {
-          font-weight: bold;
+          font-weight: 500;
           text-align: center;
           width: 100%;
           display: block;
@@ -280,7 +283,7 @@ body {
   flex-direction: column;
   max-width: 1290px; }
   .TitleSectionIndexMOD1 h3 {
-    font-weight: bold;
+    font-weight: 600;
     font-style: italic; }
 
 .AIndexMOD1 {
@@ -290,7 +293,7 @@ body {
     color: #DA0037;
     transition: 0.4s;
     display: block;
-    font-weight: 600; }
+    font-weight: 500; }
     .AIndexMOD1 .DescriptioIndexMOD1:hover {
       color: #EDEDED; }
 
@@ -328,9 +331,9 @@ body {
           text-align: center;
           width: 100%;
           display: block;
-          font-weight: 600; }
+          font-weight: 400; }
         .SectionIndexMOD1 .SectionItem .MOD1ItemBox .MOD1SpanBox .MOD1Price {
-          font-weight: bold;
+          font-weight: 500;
           text-align: center;
           width: 100%;
           display: block;
@@ -622,7 +625,7 @@ body {
         margin-right: 5px; }
     .Form .Registro .FormTitle {
       font-size: xx-large;
-      font-weight: bold;
+      font-weight: 500;
       color: #171717;
       margin: 0; }
     .Form .Registro .FormTitleLine {
@@ -646,12 +649,12 @@ body {
       height: 50px;
       width: 250px;
       color: black;
-      font-weight: bolder;
+      font-weight: 600;
       background-color: #ffffff; }
     .Form .Registro .TextForm {
       color: black;
       text-decoration: underline;
-      font-weight: bolder; }
+      font-weight: 500; }
 
 @media only screen and (max-width: 599px) {
   .Form .Registro {
@@ -675,7 +678,7 @@ body {
 
 /*--------------------------NOTEBOOKS--------------------------*/
 .NotebookTitlePage {
-  font-weight: bold;
+  font-weight: 500;
   font-size: x-large;
   margin-left: 15px; }
 
@@ -756,9 +759,10 @@ body {
     text-align: center;
     flex-direction: column;
     padding: 10px;
-    margin: 10px; }
+    margin: 10px;
+    font-weight: 400; }
     #Footer .TextFooter .FootTitle {
-      font-weight: 600;
+      font-weight: 500;
       color: #DA0037;
       margin: 10px; }
     #Footer .TextFooter ul li {
