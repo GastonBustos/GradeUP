@@ -222,6 +222,9 @@ body {
   #Nav .actual {
     color: #DA0037 !important;
     font-style: italic; }
+  #Nav .navtext {
+    font-weight: 500;
+    font-size: 1.1rem; }
 
 .Logo {
   width: 209;
@@ -741,6 +744,10 @@ body {
     text-align: center; }
   .Error404 .TextError {
     justify-content: center; }
+  .Error404 .Back {
+    font-style: italic;
+    text-decoration: underline;
+    color: #DA0037; }
 
 /*--------------------------FOOTER--------------------------*/
 #Footer {

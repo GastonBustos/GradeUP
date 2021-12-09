@@ -111,6 +111,11 @@ body {
       color: $pal-red !important;
       font-style: italic;
     }
+
+    .navtext {
+      font-weight:500;
+      font-size: 1.1rem;
+    }
   }
   
   .Logo {
@@ -913,7 +918,11 @@ body {
     .TextError {
       justify-content: center;
     }
-
+    .Back {
+      font-style: italic;
+      text-decoration: underline;
+      color: $pal-red;
+    }
   }
 
 
